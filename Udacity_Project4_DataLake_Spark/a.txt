@@ -1,0 +1,39 @@
+ ==== start process_song_data ==== 
+root
+ |-- artist_id: string (nullable = true)
+ |-- artist_latitude: double (nullable = true)
+ |-- artist_location: string (nullable = true)
+ |-- artist_longitude: double (nullable = true)
+ |-- artist_name: string (nullable = true)
+ |-- duration: double (nullable = true)
+ |-- num_songs: long (nullable = true)
+ |-- song_id: string (nullable = true)
+ |-- title: string (nullable = true)
+ |-- year: long (nullable = true)
+
+--- start to write parquet file of songs table(dimension) ---
+--- start to write parquet file of artists table(dimension) ---
+ ==== start process_log_data ==== 
+root
+ |-- artist: string (nullable = true)
+ |-- auth: string (nullable = true)
+ |-- firstName: string (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- itemInSession: long (nullable = true)
+ |-- lastName: string (nullable = true)
+ |-- length: double (nullable = true)
+ |-- level: string (nullable = true)
+ |-- location: string (nullable = true)
+ |-- method: string (nullable = true)
+ |-- page: string (nullable = true)
+ |-- registration: double (nullable = true)
+ |-- sessionId: long (nullable = true)
+ |-- song: string (nullable = true)
+ |-- status: long (nullable = true)
+ |-- ts: long (nullable = true)
+ |-- userAgent: string (nullable = true)
+ |-- userId: string (nullable = true)
+
+--- start to write parquet file of users table(dimension) ---
+--- start to write parquet file of time table(dimension)---
+--- start to write parquet file of songplays table(fact) ---
